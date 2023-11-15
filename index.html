@@ -74,7 +74,86 @@
       </ul>
     </div>
 
-    <!--================ okno modalne start ===============-->
+
+<!-- ======================= Okno modalne start ==================== -->
+
+<div class="modal-container is-hidden" data-modal="./js/modal.js">
+  <div class="modal">
+    <button type="button" data-modal-close class="button-modal">
+      <svg width="8" height="8" class="svg-modal">
+        <use href="./images/icon-close.svg#icon-close">
+        </use>
+      </svg>
+    </button>
+    <p class="p-modal">Leave your contacts and we will call you back</p>
+
+    <form>
+
+      <div class="another-modal-div">
+        <label class="label-one" for="user-name">Name</label>
+        <div class="another-modal-div-two">
+          <input id="user-name" name="user-name" type="text" class="input-one-modal" required>
+          <svg width="18" height="24" class="svg-modal-two">
+            <use href="./images/icons.svg#icon-person-black-18dp-1">
+            </use>
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="another-modal-div">
+        <label class="label-one" for="user-name">Phone</label>
+        <div class="another-modal-div-two">
+          <input id="tel" name="tel" type="text" class="input-one-modal" required>
+          <svg width="18" height="24" class="svg-modal-two">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1">
+            </use>
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="another-modal-div">
+        <label class="label-one" for="user-name">Email</label>
+        <div class="another-modal-div-two">
+          <input id="email" name="email" type="email" class="input-one-modal" required>
+          <svg width="18" height="24" class="svg-modal-two">
+            <use href="./images/icons.svg#icon-email-black-18dp-1">
+            </use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="form-div-four">
+        <label for="user-comment" class="label-one">Comment</label>
+        <textarea id="user-comment" name="user-comment" placeholder="Text input" class="textarea-modal"></textarea>
+      </div>
+
+      <div class="form-div-five">
+        <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden modal-check" required>
+        <label class="label-div-five" for="user-privacy">
+          <span class="span-div-five">
+            <svg width="10" height="8" class="svg-privacy">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </span>
+          I accept the terms and conditions of the
+          <a href="#" class="link-label">Privacy Policy</a>
+        </label>
+      </div>
+      <button class="button-modal-send">Send</button>
+
+
+    </form>
+</div>
+</div>
+
+<!-- ======================Okno modalne stop ======================= -->
+
+
+<!--=============button okno modalne ==============-->
+<button class="order-service-button" data-modal-open="/js/modal.js">Order Service</button>
+
 
     <script
       defer
@@ -83,5 +162,6 @@
       crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
